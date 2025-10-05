@@ -103,7 +103,7 @@ app.post('/users/update/:id', async(req, res) => {
 })
 
 console.log('banco conectado')
-console.log('servidor rodando localhost:' + ports)
+console.log('servidor rodando localhost:' + port)
 
 conn.sync().then(() => {
     app.listen(port)
