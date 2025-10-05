@@ -8,4 +8,11 @@ const sequelize = new Sequelize(process.env.DATABASE_URL, {
   logging: false
 });
 
+try {
+  await sequelize.authenticate();
+  console.log('banco conectado');
+} catch (error) {
+  console.error('Erro ao conectar no banco:', error);
+}
+
 export default sequelize;
