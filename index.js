@@ -5,8 +5,7 @@ import conn from './sql/index.js'
 import User from './models/User.js'
 
 
-
-const ports = 3000
+const port = process.env.PORT || 3000;
 const app = express()
 
 app.use(
@@ -107,7 +106,7 @@ console.log('banco conectado')
 console.log('servidor rodando localhost:' + ports)
 
 conn.sync().then(() => {
-    app.listen(ports)
+    app.listen(port)
 }).catch((err) => {
     console.log(err)
 })
