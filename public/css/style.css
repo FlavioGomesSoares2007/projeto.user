@@ -1,0 +1,224 @@
+/* === GERAL === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* === CABEÇALHO === */
+header {
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* === NAVEGAÇÃO === */
+nav {
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    color: #bbb;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* === CONTEÚDO PRINCIPAL === */
+main {
+    flex: 1;
+    padding: 40px 20px;
+}
+
+/* === FORMULÁRIOS === */
+.form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    color: #bbb;
+}
+
+.form-control input[type="text"],
+.form-control input[type="email"],
+.form-control input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2a2a2a;
+    color: #fff;
+}
+
+.form-control input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button, .btn {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background-color: #7b35ff;
+    transform: scale(1.05);
+}
+
+/* === LISTA DE USUÁRIOS (TELA INICIAL) === */
+.users {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
+    text-align: center;
+}
+
+.users h1 {
+    margin-bottom: 25px;
+    color: #fff;
+    border-bottom: 2px solid #6200ea;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-list a {
+    display: block;
+    background-color: #2a2a2a;
+    color: #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.user-list a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* === DETALHES DO USUÁRIO === */
+.detalhe {
+    max-width: 550px;
+    margin: 50px auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detalhe:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(98, 0, 234, 0.3);
+}
+
+#usuario {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #6200ea;
+}
+
+#usuario p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    color: #dcdcdc;
+}
+
+/* BOTÕES DE AÇÃO (EXCLUIR / EDITAR) */
+#excluir-editar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#excluir-editar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#excluir-editar a:nth-child(1) {
+    background-color: #e53935; /* vermelho: deletar */
+}
+
+#excluir-editar a:nth-child(2) {
+    background-color: #1976d2; /* azul: editar */
+}
+
+#excluir-editar a:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* === RODAPÉ === */
+footer {
+    background-color: #1e1e1e;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #333;
+    margin-top: auto;
+}

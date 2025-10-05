@@ -1,0 +1,12 @@
+<div class="detalhe">
+    <div id="usuario">
+        <p>nome: {{user.name}}</p>
+        <br>
+        <p>trabalha como: {{user.occupation}}</p>
+    </div>
+    <div id="excluir-editar">
+        <a href="/users/delete/{{user.id}}">delete</a>
+
+        <a href="/users/edit/{{user.id}}">editar</a>
+    </div>
+</div>
